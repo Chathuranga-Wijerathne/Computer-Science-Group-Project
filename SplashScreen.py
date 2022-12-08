@@ -4,6 +4,7 @@ from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QProgressBar, QL
 from PyQt5.QtCore import Qt, QTimer
 
 
+
 class SplashScreen(QWidget):
     def __init__(self):
         super().__init__()
