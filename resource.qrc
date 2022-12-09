@@ -1,0 +1,28 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>Icons/Shortcut Edit Menu.png</file>
+    <file>Icons/Shortcut File Menu.png</file>
+    <file>Icons/Expand Down.png</file>
+    <file>Icons/Forward.png</file>
+    <file>Icons/Electronic Devices.png</file>
+    <file>Icons/How to Use.png</file>
+    <file>Icons/Report.png</file>
+    <file>Icons/About.png</file>
+    <file>Icons/Update.png</file>
+    <file>Icons/Settings.png</file>
+    <file>Icons/Select All.png</file>
+    <file>Icons/Close.png</file>
+    <file>Icons/Copy.png</file>
+    <file>Icons/Cut.png</file>
+    <file>Icons/Delete.png</file>
+    <file>Icons/Home.png</file>
+    <file>Icons/New.png</file>
+    <file>Icons/Open.png</file>
+    <file>Icons/Paste.png</file>
+    <file>Icons/Redo.png</file>
+    <file>Icons/Reset.png</file>
+    <file>Icons/Save.png</file>
+    <file>Icons/Template.png</file>
+    <file>Icons/Undo.png</file>
+  </qresource>
+</RCC>

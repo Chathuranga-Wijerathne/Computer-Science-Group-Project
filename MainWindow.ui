@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1931</width>
+    <height>1087</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>0</y>
+      <width>1581</width>
+      <height>971</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:white</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget_2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>321</width>
+      <height>981</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:white</string>
+    </property>
+    <widget class="QWidget" name="widget_3" native="true">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>301</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:lightblue</string>
+     </property>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>10</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>14</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Device List</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>80</y>
+       <width>301</width>
+       <height>811</height>
+      </rect>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>299</width>
+        <height>809</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="widget_4" native="true">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>900</y>
+       <width>291</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:lightblue</string>
+     </property>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>10</y>
+        <width>161</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: lightgreen</string>
+      </property>
+      <property name="text">
+       <string>Finish</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1931</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile_F">
+    <property name="title">
+     <string>File (&amp;F)</string>
+    </property>
+    <addaction name="actionHome_Ctrl_H"/>
+    <addaction name="separator"/>
+    <addaction name="actionNew_Project_Ctrl_N"/>
+    <addaction name="separator"/>
+    <addaction name="actionOpen_Project_Ctrl_O"/>
+    <addaction name="separator"/>
+    <addaction name="actionSave_Project_Ctrl_S"/>
+    <addaction name="separator"/>
+    <addaction name="actionSettings"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit_X"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit_E">
+    <property name="title">
+     <string>Edit (&amp;E)</string>
+    </property>
+    <addaction name="actionUndo_Ctrl_Z"/>
+    <addaction name="actionRedo_Ctrl_Y"/>
+    <addaction name="actionReset_Crtl_R"/>
+    <addaction name="separator"/>
+    <addaction name="actionCut_Ctrl_X"/>
+    <addaction name="actionCopy_Ctrl_C"/>
+    <addaction name="actionPaste_Ctrl_V"/>
+    <addaction name="separator"/>
+    <addaction name="actionDelete"/>
+    <addaction name="actionSelect_All_Ctrl_A"/>
+   </widget>
+   <widget class="QMenu" name="menuView_V">
+    <property name="title">
+     <string>View (&amp;V)</string>
+    </property>
+    <addaction name="actionShortcut_File_Menu"/>
+    <addaction name="actionShortcut_Edit_Menu"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp_H">
+    <property name="title">
+     <string>Help (&amp;H)</string>
+    </property>
+    <addaction name="actionDevices"/>
+    <addaction name="actionHow_To_Use"/>
+    <addaction name="separator"/>
+    <addaction name="actionReport_Issue"/>
+    <addaction name="actionCheck_For_Updaes"/>
+    <addaction name="separator"/>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuFile_F"/>
+   <addaction name="menuEdit_E"/>
+   <addaction name="menuView_V"/>
+   <addaction name="menuHelp_H"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>40</width>
+     <height>40</height>
+    </size>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionHome_Ctrl_H"/>
+   <addaction name="actionNew_Project_Ctrl_N"/>
+   <addaction name="actionOpen_Project_Ctrl_O"/>
+   <addaction name="actionSave_Project_Ctrl_S"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar_2">
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar_2</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>40</width>
+     <height>40</height>
+    </size>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionReset_Crtl_R"/>
+   <addaction name="separator"/>
+   <addaction name="actionUndo_Ctrl_Z"/>
+   <addaction name="actionRedo_Ctrl_Y"/>
+   <addaction name="actionCut_Ctrl_X"/>
+   <addaction name="actionCopy_Ctrl_C"/>
+   <addaction name="actionPaste_Ctrl_V"/>
+  </widget>
+  <action name="actionNew_Project_Ctrl_N">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icons/Icons/New.png</normaloff>:/icons/Icons/New.png</iconset>
+   </property>
+   <property name="text">
+    <string>New Project (&amp;Ctrl+N)</string>
+   </property>
+  </action>
+  <action name="actionOpen_Project_Ctrl_O">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icons/Icons/Open.png</normaloff>:/icons/Icons/Open.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open Project (&amp;Ctrl+O)</string>
+   </property>
+  </action>
+  <action name="actionSave_Project_Ctrl_S">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icons/Icons/Save.png</normaloff>:/icons/Icons/Save.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save Project (Ctrl+S)</string>
+   </property>
+  </action>
+  <action name="actionSettings">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icons/Icons/Settings.png</normaloff>:/icons/Icons/Settings.png</iconset>
+   </property>
+   <property name="text">
+    <string>Settings &amp;</string>
+   </property>
+  </action>
+  <action name="actionExit_X">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icons/Icons/Close.png</normaloff>:/icons/Icons/Close.png</iconset>
+   </property>
+   <property name="text">
+    <string>Exit (&amp;Alt+F4)</string>
+   </property>
+  </action>
+  <action name="actionUndo_Ctrl_Z">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icons/Icons/Undo.png</normaloff>:/icons/Icons/Undo.png</iconset>
+   </property>
+   <property name="text">
+    <string>Undo (&amp;Ctrl+Z)</string>
+   </property>
+  </action>
+  <action name="actionRedo_Ctrl_Y">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icons/Icons/Redo.png</normaloff>:/icons/Icons/Redo.png</iconset>
+   </property>
+   <property name="text">
+    <string>Redo (&amp;Ctrl+Y)</string>
+   </property>
+  </action>
+  <action name="actionCut_Ctrl_X">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icons/Icons/Cut.png</normaloff>:/icons/Icons/Cut.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cut (&amp;Ctrl+X)</string>
+   </property>
+  </action>
+  <action name="actionCopy_Ctrl_C">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icons/Icons/Copy.png</normaloff>:/icons/Icons/Copy.png</iconset>
+   </property>
+   <property name="text">
+    <string>Copy (&amp;Ctrl+C)</string>
+   </property>
+  </action>
+  <action name="actionPaste_Ctrl_V">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icons/Icons/Paste.png</normaloff>:/icons/Icons/Paste.png</iconset>
+   </property>
+   <property name="text">
+    <string>Paste (&amp;Ctrl+V)</string>
+   </property>
+  </action>
+  <action name="actionDelete">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icons/Icons/Delete.png</normaloff>:/icons/Icons/Delete.png</iconset>
+   </property>
+   <property name="text">
+    <string>Delete &amp;</string>
+   </property>
+  </action>
+  <action name="actionSelect_All_Ctrl_A">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icons/Icons/Select All.png</normaloff>:/icons/Icons/Select All.png</iconset>
+   </property>
+   <property name="text">
+    <string>Select All (Ctrl+A)</string>
+   </property>
+  </action>
+  <action name="actionDevices">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icons/Icons/Electronic Devices.png</normaloff>:/icons/Icons/Electronic Devices.png</iconset>
+   </property>
+   <property name="text">
+    <string>Devices &amp;</string>
+   </property>
+  </action>
+  <action name="actionHow_To_Use">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icons/Icons/How to Use.png</normaloff>:/icons/Icons/How to Use.png</iconset>
+   </property>
+   <property name="text">
+    <string>How To Use</string>
+   </property>
+  </action>
+  <action name="actionReport_Issue">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icons/Icons/Report.png</normaloff>:/icons/Icons/Report.png</iconset>
+   </property>
+   <property name="text">
+    <string>Report Issue &amp;</string>
+   </property>
+  </action>
+  <action name="actionCheck_For_Updaes">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icons/Icons/Update.png</normaloff>:/icons/Icons/Update.png</iconset>
+   </property>
+   <property name="text">
+    <string>Check For Updaes &amp;</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icons/Icons/About.png</normaloff>:/icons/Icons/About.png</iconset>
+   </property>
+   <property name="text">
+    <string>About &amp;</string>
+   </property>
+  </action>
+  <action name="actionReset_Crtl_R">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icons/Icons/Reset.png</normaloff>:/icons/Icons/Reset.png</iconset>
+   </property>
+   <property name="text">
+    <string>Reset (&amp;Crtl+R)</string>
+   </property>
+  </action>
+  <action name="actionHome_Ctrl_H">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icons/Icons/Home.png</normaloff>:/icons/Icons/Home.png</iconset>
+   </property>
+   <property name="text">
+    <string>Home (&amp;Ctrl+H)</string>
+   </property>
+  </action>
+  <action name="actionShortcut_File_Menu">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icons/Icons/Shortcut File Menu.png</normaloff>:/icons/Icons/Shortcut File Menu.png</iconset>
+   </property>
+   <property name="text">
+    <string>Shortcut File Menu &amp;</string>
+   </property>
+  </action>
+  <action name="actionShortcut_Edit_Menu">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/icons/Icons/Shortcut Edit Menu.png</normaloff>:/icons/Icons/Shortcut Edit Menu.png</iconset>
+   </property>
+   <property name="text">
+    <string>Shortcut Edit Menu &amp;</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
